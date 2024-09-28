@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+ 
+}
+
+container {
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #28a745;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: "10px 20px";
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.nameBox {
+  width: 450px;
+  height: 150px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+.nameDisplay {
+  font-size: 30px;
+  color: #333;
+}
