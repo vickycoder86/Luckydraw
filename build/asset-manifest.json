@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.86566c26.css",
+    "main.js": "/static/js/main.5d7a5ff7.js",
+    "static/media/spinlogo.gif": "/static/media/spinlogo.3589e86eda3da8b02089.gif",
+    "static/media/Picture2.jpg": "/static/media/Picture2.32f15959449882085c3d.jpg",
+    "index.html": "/index.html",
+    "main.86566c26.css.map": "/static/css/main.86566c26.css.map",
+    "main.5d7a5ff7.js.map": "/static/js/main.5d7a5ff7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86566c26.css",
+    "static/js/main.5d7a5ff7.js"
+  ]
+}

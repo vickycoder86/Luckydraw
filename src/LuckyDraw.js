@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Confetti from "react-confetti"; // Import confetti
 import  "./styles.css"
+import spinlogo from "../src/spinlogo.gif"
+
 
 const LuckyDraw = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // Tracks the current index of the spinning names
@@ -1447,16 +1449,23 @@ const LuckyDraw = () => {
       // Show confetti for 3 seconds after winner is shown
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 4000); // Confetti for 3 seconds
-    }, 3000); // Stop after 2 seconds
+    }, 4000); // Stop after 2 seconds
   };
 
   return (
     <div className="container">
-      <h1>VIVO V40e Launch Lucky Draw</h1>
-      <img
-        src="https://media4.giphy.com/avatars/wheeloffortune/4Qxgn49y7nzh.gif"
-        width={250}
+      <div>
+        <img src={spinlogo}  className="logo1"/>
+      </div>
+     
+       <div>
+      <h1 className="head">vivo V40e Launch Lucky Draw</h1>
+      <img 
+        src={spinlogo}
+        width={280}
+        
       />
+     
 
       <div className="nameBox">
         <p className="nameDisplay">
@@ -1480,14 +1489,19 @@ const LuckyDraw = () => {
       </button>
       {winnerIndex !== null && (
         <div className="result">
-          <p>Dealer Name: {winnerName}</p>
-          <p>Owner Name: {winnerSurname}</p>
+          <p>Dealer Name:  {winnerName}</p>
+          <p>Owner Name:  {winnerSurname}</p>
         </div>
       )}
       {/* Show confetti when there's a winner */}
       {showConfetti && <Confetti />}
     </div>
-  );
+    <div>
+        <img src={spinlogo} width={150} className="logo2"/>
+      </div>
+    
+    </div>
+  );  
 };
 
 // Styles
